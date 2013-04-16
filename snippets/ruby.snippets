@@ -1,0 +1,16 @@
+snippet mwin
+	@window = UIWindow.alloc.initWithFrame(UIScreen.mainScreen.bounds)
+	@window.rootViewController = ${1:controller}
+	@window.makeKeyAndVisible
+
+snippet mc
+	${1:controller} = ${2:SomeController}.alloc.initWithNibName(nil, bundle: nil)
+
+snippet mcnav
+	${1:nav_controller} = UINavinationController.alloc.initWithRootViewController(${2:some_controller})
+
+snippet mctab
+	${1:tab_controller} = UITabBarController.alloc.initWithNibName(nil, bundle: nil)
+	$1.viewControllers = []
+
+
